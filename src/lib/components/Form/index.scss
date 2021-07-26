@@ -1,0 +1,6 @@
+.lb-form {
+    @apply flex flex-col gap-10;
+
+    &.dense { @apply gap-5; }
+    &.denser { @apply gap-3; }
+}

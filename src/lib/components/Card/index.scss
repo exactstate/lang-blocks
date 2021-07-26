@@ -1,0 +1,17 @@
+.lb-card {
+    @apply bg-white shadow-lg rounded-md;
+
+    .header { @apply px-5 py-3 border-b; }
+    .inner { @apply px-5 py-5; }
+
+    .buttons { 
+        @apply flex flex-wrap;
+        & > * { @apply flex-1; }
+    }
+
+    &.flat { @apply shadow-none border; }
+    &.tile { 
+        @apply rounded-none;
+        .buttons > * { border-radius: 0px !important; }
+    }
+}

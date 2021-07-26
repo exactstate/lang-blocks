@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './typography.scss';
+@import './form.scss';
+
+body {
+    font-family: 'Inter';
+    @apply tracking-tight;
+}
+

@@ -1,0 +1,29 @@
+// Form Groups
+.lb-formgroup {
+    @apply flex flex-col;
+
+    label { 
+        @apply font-bold text-lg mb-2 ml-3 inline-block text-gray-700;
+        .required { @apply text-gray-400; }
+    }
+    small { @apply mt-2 ml-3 inline-block; }
+}
+
+// Div that contains the form control, used for absolute positioning
+// within the formcontrol box
+.lb-formcontrol-parent { @apply relative; }
+
+// Form Controls
+.lb-formcontrol {
+    @apply px-3 py-4 rounded-md shadow-sm border w-full ring-primary-500;
+
+    &:focus {
+        @apply ring-2 outline-none;
+    }
+
+    &:focus + .lb-formcontrol-controls {
+        @apply opacity-100;
+    }
+
+    &.error { @apply ring-red-400 ring-2; }
+}

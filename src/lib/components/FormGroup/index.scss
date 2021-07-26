@@ -1,0 +1,6 @@
+.lb-formgroup {
+    .errors {
+        @apply text-red-400 font-medium list-disc pl-5;
+        li { @apply mb-1; }
+    }
+}

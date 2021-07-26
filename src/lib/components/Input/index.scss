@@ -1,0 +1,13 @@
+.lb-formcontrol-controls {
+    @apply flex flex-wrap absolute top-0 right-0 bottom-0 opacity-50 duration-100 ease-in-out;
+
+    &.focused {
+        @apply opacity-100;
+    }
+}
+
+.lb-formcontrol-counter {
+    @apply absolute -bottom-6 right-4;
+
+    &.over { @apply text-red-400; }
+}
